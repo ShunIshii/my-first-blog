@@ -27,8 +27,8 @@ def corner(sankey):
                prior=prior - 1, connect=(1, 0), alpha=0.5)
 
 
-fig = plt.figure()
-ax = fig.add_subplot(1, 1, 1, xticks=[], yticks=[],
+fig = plt.figure(figsize=(10,10), facecolor='b', edgecolor='k')
+ax = fig.add_subplot(3, 3, 5,
                      title="Why would you want to do this?\n(But you could.)")
 sankey = Sankey(ax=ax, unit=None)
 sankey.add(flows=[1, -1], orientations=[0, 1],
